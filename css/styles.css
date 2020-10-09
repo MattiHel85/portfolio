@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "PT Sans", helvetica, sans-serif;
+}
+
+input,
+textarea,
+button {
+    font-family: "PT Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: coral;
+}
+
+h1, h2, h3 {
+    margin-bottom: 1.8rem;
+}
+
+p {
+    margin-bottom: 0.8rem;
+    line-height: 2;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 3rem;
+    min-height: 25vh;
+    margin: 0 auto;
+}
+
+/* header area  */
+
+header {
+    background-color: #333;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+header #logo a {
+    color: coral;
+    font-size: 2rem;
+}
+
+/* main navigation  */
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+/* Dropdown button  */
+
+header nav ul .dropdown .dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 16px;
+    font-size: 1rem;
+    /* text-transform: uppercase; */
+    display: block;
+    border: none;
+}
+
+/* Container div to position dropdown content  */
+
+header nav ul .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content (hidden by default)  */
+
+header nav ul .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba (0,0,0,0.2);
+    z-index: 1;
+    padding: 0.5rem;
+}
+
+/* Links inside the .dropdown */
+
+header nav ul .dropdown a {
+    color: #333;
+    /* text-transform: uppercase; */
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    margin: 0 1rem;
+    display: block;
+    border-bottom: 3px solid transparent;
+}
+
+/* Change color of dropdown links on hover  */
+header nav ul .dropdown a:hover {
+    background-color: #ddd;
+}
+
+/* Dropdown chevron style  */
+
+header nav ul .dropdown i {
+    color: coral;
+    padding: 3px;
+}
+
+/* Show the dropdown menu on hover  */
+
+header nav ul .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change background color of dropdown button when dropdown content is shown  */
+
+/* header nav ul .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+} */
+
+header nav ul li a {
+    color: white;
+    /* text-transform: uppercase; */
+    padding: 0.5rem 0;
+    margin: 0 1rem;
+    display: block;
+    border-bottom: 3px dashed transparent;
+}
+
+header nav ul li a:hover {
+    border-bottom: 3px solid coral;
+}
+
+/* hero banner  */
+
+main #hero-banner {
+    background: url("https://source.unsplash.com/1600x900/?waterfall") no-repeat fixed center center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main #hero-banner h1 {
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+    font-family: "Ubunti Mono", monospace;
+}
+
+main #hero-banner span {
+    color: coral;
+}
+
+/* work */
+
+main #work {
+    background-color: #f4f4f4;
+}
+
+main #work .work_boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+main #work .box {
+    background-color: white;
+    width: 32%;
+    padding: 1rem;
+    border-radius: 2px;
+    box-shadow: 0 0 5px #333;
+}
+main #work .box img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+main #work .box:hover {
+    box-shadow: 0 0 25px #333;
+}
+
+main #work a:hover {
+    color: darkorange;
+    text-decoration: underline;
+}
+
+/* experience section  */
+
+main #experience {
+    display: flex;
+    background-color: white;
+}
+
+main #experience img {
+    width: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+main #experience .content {
+    padding: 3rem;
+}
+
+/* Skills flex */
+
+#skills .top {
+    background-color: rgba(255, 255, 255, 0.95);
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#skills .bottom {
+  background-color: rgba(255, 255, 255, 0.95);
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#skills .box {
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#skills .box i {
+  font-size: 4rem;
+  margin-top: 1rem;
+}
+
+#skills .box h4 {
+  color: #333;
+  margin-top: 1rem;
+}
+
+#skills .box i {
+  color: #333;
+}
+
+#skills #skills-box .skills-img {
+  width: 40%;
+  margin-left: 5%;
+  margin-top: 1rem;
+  margin-bottom: 0.1rem;
+}
+
+#skills #skills-box .skills-img2 {
+  width: 50%;
+  margin-left: 5%;
+  margin-top: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+  
+  /* Experience section*/
+  
+  main #experience img {
+    float: left;
+    width: 50%;
+    margin-right: 50px;
+  }
+  
+  main #experience .content {
+    padding: 50px;
+  }
+  
+  main #experience .content p {
+    line-height: 2;
+  }
+
+/* skills - progress bars  */
+
+    /* HTML  */
+
+    #htmlprogressbar {
+        background-color: #333;
+        border-radius: 13px;
+        /* (height of inner div) / 2 + padding */
+        padding: 0.25rem;
+        margin: 1rem;
+    }
+  
+    #htmlprogressbar>div {
+        background-color: coral;
+        width: 80%;
+        /* Adjust with JavaScript */
+        height: 20px;
+        border-radius: 10px;
+    }
+
+    /* CSS3  */
+    #cssprogressbar {
+        background-color: #333;
+        border-radius: 13px;
+        /* (height of inner div) / 2 + padding */
+        padding: 0.25rem;
+        margin: 1rem;
+    }
+  
+    #cssprogressbar>div {
+        background-color: coral;
+        width: 50%;
+        /* Adjust with JavaScript */
+        height: 20px;
+        border-radius: 10px;
+    }
+
+    /* Javascript */
+    #javascriptprogressbar {
+        background-color: #333;
+        border-radius: 13px;
+        /* (height of inner div) / 2 + padding */
+        padding: 0.25rem;
+        margin: 1rem;
+    }
+  
+    #javascriptprogressbar>div {
+        background-color: coral;
+        width: 50%;
+        /* Adjust with JavaScript */
+        height: 20px;
+        border-radius: 10px;
+    }
+
+    /* Bootstrap */
+    #bootstrapprogressbar {
+        background-color: #333;
+        border-radius: 13px;
+        /* (height of inner div) / 2 + padding */
+        padding: 0.25rem;
+        margin: 1rem;
+    }
+  
+    #bootstrapprogressbar>div {
+        background-color: coral;
+        width: 70%;
+        /* Adjust with JavaScript */
+        height: 20px;
+        border-radius: 10px;
+    }
+
+    /* MongoDB */
+    #mongoprogressbar {
+        background-color: #333;
+        border-radius: 13px;
+        /* (height of inner div) / 2 + padding */
+        padding: 0.25rem;
+        margin: 1rem;
+    }
+  
+    #mongoprogressbar>div {
+        background-color: coral;
+        width: 40%;
+        /* Adjust with JavaScript */
+        height: 20px;
+        border-radius: 10px;
+    }
+    /* Express  */
+    #expressprogressbar {
+        background-color: #333;
+        border-radius: 13px;
+        /* (height of inner div) / 2 + padding */
+        padding: 0.25rem;
+        margin: 1rem;
+    }
+  
+    #expressprogressbar>div {
+        background-color: coral;
+        width: 40%;
+        /* Adjust with JavaScript */
+        height: 20px;
+        border-radius: 10px;
+    }
+    /* ReactJS */
+    #reactprogressbar {
+        background-color: #333;
+        border-radius: 13px;
+        /* (height of inner div) / 2 + padding */
+        padding: 0.25rem;
+        margin: 1rem;
+    }
+  
+    #reactprogressbar>div {
+        background-color: coral;
+        width: 20%;
+        /* Adjust with JavaScript */
+        height: 20px;
+        border-radius: 10px;
+    }
+
+    /* NodeJS */
+    #nodeprogressbar {
+        background-color: #333;
+        border-radius: 13px;
+        /* (height of inner div) / 2 + padding */
+        padding: 0.25rem;
+        margin: 1rem;
+    }
+  
+    #nodeprogressbar>div {
+        background-color: coral;
+        width: 60%;
+        /* Adjust with JavaScript */
+        height: 20px;
+        border-radius: 10px;
+    }
+
+
+
+/* flexbox gallery  */
+main h1 {
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    padding-top: 0;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 90%;
+}
+
+.column img:hover {
+    width: 100%;
+    box-shadow: 0 0 25px #333;
+}
+
+
+
+/* footer area  */
+
+footer {
+    background-color: #333;
+    text-align: center;
+    color: white;
+    padding: 1.5rem;
+}
+
+footer p {
+    font-size: 0.8rem;
+    margin-top: 3rem;
+}
+
+/* form  */
+
+footer form .form-group {
+    margin: 2rem 0;
+}
+
+footer form .form-group label {
+    width: 200px;
+    display: inline-block;
+    text-align: left;
+}
+
+footer form .form-group input,
+footer form .form-group textarea {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    width: 60%;
+    font-size: 1rem;
+}
+
+footer form .form-group textarea {
+    min-height: 100px;
+}
+
+footer form button {
+    background-color: coral;
+    border-radius: 5px;
+    border: none;
+    padding: 1rem 2rem;
+    color: white;
+    font-size: inherit;
+    text-transform: uppercase;
+}
+
+@media (max-width: 899px) {
+    main #present {
+        display: block;
+    }
+
+    main #present  img {
+        width: 100%;
+    }
+    footer form {
+        width: 80%;
+        text-align: left;
+    }
+
+    footer form .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+    footer form .form-group input,
+    footer form .form-group textarea {
+        width: 100%;
+    }
+    footer form button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    
+}

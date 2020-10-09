@@ -1,0 +1,102 @@
+<!-- This is a base for porfolio project -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio project for Business College Helsinki HTML and CSS3 course"
+    />
+    <meta name="author" content="Matt Simpson" />
+    <meta name="keywords" content="HTML5, CSS3, Portfolio, school-project" />
+    <title>Portfolio 4</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Ubuntu+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="/index.html">MyWeb</a>
+      </div>
+      <nav>
+        <ul>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Portfolio
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <li><a href="/index.html#work">Work</a></li>
+              <li><a href="/index.html#present">Experience</a></li>
+              <li><a href="#future">Skills</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+            </div>
+          </div>
+          <li><a href="#footer">Contact me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Gallery</h1>
+      <section class="row">
+        <div class="column">
+          <img src="https://source.unsplash.com/1600x900/?time" alt="time">
+          <img src="https://source.unsplash.com/1600x900/?space" alt="space">
+          <img src="https://source.unsplash.com/1600x900/?science" alt="science">
+          <img src="https://source.unsplash.com/1600x900/?math" alt="math">
+          <img src="https://source.unsplash.com/1600x900/?marijuana" alt="marijuana">
+          <img src="https://source.unsplash.com/1600x900/?mountain" alt="mountain">
+        </div>
+        <div class="column">
+          <img src="https://source.unsplash.com/800x600/?dccomics" alt="dccomics">
+          <img src="https://source.unsplash.com/800x600/?batman" alt="batman">
+          <img src="https://source.unsplash.com/800x600/?spiderman" alt="spiderman">
+          <img src="https://source.unsplash.com/800x600/?captainamerica" alt="captainamerica">
+          <img src="https://source.unsplash.com/800x600/?england" alt="england">
+          <img src="https://source.unsplash.com/800x600/?helsinki" alt="helsinki">
+        </div>
+        <div class="column">
+          <img src="https://source.unsplash.com/1600x900/?football" alt="football">
+          <img src="https://source.unsplash.com/1600x900/?comedy" alt="comedy">
+          <img src="https://source.unsplash.com/1600x900/?microphone" alt="microphone">
+          <img src="https://source.unsplash.com/1600x900/?finland" alt="finland">
+          <img src="https://source.unsplash.com/1600x900/?hiphop" alt="land">
+          <img src="https://source.unsplash.com/1600x900/?punk" alt="punk">
+        </div>
+        <div class="column">
+          <img src="https://source.unsplash.com/1600x900/?love" alt="love">
+          <img src="https://source.unsplash.com/1600x900/?hate" alt="hate">
+          <img src="https://source.unsplash.com/1600x900/?technology" alt="technology">
+          <img src="https://source.unsplash.com/1600x900/?america" alt="america">
+          <img src="https://source.unsplash.com/1600x900/?history" alt="history">
+          <img src="https://source.unsplash.com/1600x900/?envy" alt="envy">
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+        <h2>Contact me</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Your email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message to me</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <button type="submit">Send message</button>
+        </form>
+        <p>Copyright &copy; Matt Simpson 3030</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,228 @@
+<!-- This is a base for porfolio project -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio project for Business College Helsinki HTML and CSS3 course"
+    />
+    <meta name="author" content="Matt Simpson" />
+    <meta name="keywords" content="HTML5, CSS3, Portfolio, school-project" />
+    <title>Portfolio 4</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Ubuntu+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="#">MyWeb</a>
+      </div>
+      <nav>
+        <ul>
+          <div class="dropdown">
+            <div class="dropbtn">
+              Portfolio
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="dropdown-content">
+              <li><a href="#work">Work</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="/gallery.html">Gallery</a></li>
+            </div>
+          </div>
+          <li><a href="#footer">Contact me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero-banner">
+        <h1>Welcome to my <span>Portfolio</span> page</h1>
+      </section>
+      <section id="work">
+        <div class="container">
+          <h2>Work
+          </h2>
+          <div class="work_boxes">
+            <div class="box">
+              <img src="https://source.unsplash.com/1600x900/?time" alt="time">
+              <h3>Lorem ipsum dolor sit</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, voluptate?</p>
+              <a href="#">See more</a>
+            </div>
+            <div class="box">
+              <img src="https://source.unsplash.com/1600x900/?car" alt="time">
+              <h3>Lorem ipsum dolor sit</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, voluptate?</p>
+              <a href="#">See more</a>
+            </div>          
+            <div class="box">
+              <img src="https://source.unsplash.com/1600x900/?plane" alt="time">
+              <h3>Lorem ipsum dolor sit</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, voluptate?</p>
+              <a href="#">See more</a>
+            </div>
+          </div>
+        </section>
+      <section id="experience">
+        <img src="https://source.unsplash.com/1600x900/?experience" alt="time" />
+        <div class="content">
+          <h2>Experience</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Exercitationem delectus consequatur, unde laborum doloremque, et
+            commodi eveniet aperiam molestiae, ea ducimus officiis! Earum
+            ratione accusantium eos explicabo, nulla harum architecto iste
+            delectus dignissimos atque impedit cum ab error reiciendis.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Exercitationem delectus consequatur, unde laborum doloremque, et
+            commodi eveniet aperiam molestiae, ea ducimus officiis! Earum
+            ratione accusantium eos explicabo, nulla harum architecto iste
+            delectus dignissimos atque impedit cum ab error reiciendis.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Exercitationem delectus consequatur, unde laborum doloremque, et
+            commodi eveniet aperiam molestiae, ea ducimus officiis! Earum
+            ratione accusantium eos explicabo, nulla harum architecto iste
+            delectus dignissimos atque impedit cum ab error reiciendis.
+          </p>
+        </div>
+    </section>
+    <section id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <section class="top">
+            <div class="box">
+                <h4>
+                    HTML5
+                </h4>
+                <i id="html5" class="fab fa-html5"></i>
+                <div id="htmlprogressbar">
+                  <div></div>
+                </div>
+            </div>
+            <div class="box">
+                <h4>
+                    CSS3
+                </h4>
+                <i class="skills-icon-css fab fa-css3-alt"></i>
+                <div id="cssprogressbar">
+                  <div></div>
+                </div>
+            </div>
+            <div class="box">
+                <h4>
+                    Javascript
+                </h4>
+                <i class="skills-icon-js fab fa-js"></i>
+                <div id="javascriptprogressbar">
+                  <div></div>
+                </div>
+            </div>
+            <div class="box">
+                <h4>
+                    Bootstrap 4
+                </h4>
+                <i class="fab fa-bootstrap"></i>
+                <div id="bootstrapprogressbar">
+                  <div></div>
+                </div>
+            </div>
+        </section>
+        <section class="bottom">
+            <div class="box">
+                <h4>
+                    MongoDB
+                </h4>
+                <div id="skills-box">
+                    <img class="skills-img" src="img/mongodb.svg">  
+                </div>
+                <div id="mongoprogressbar">
+                  <div></div>
+                </div>
+            </div>
+            <div class="box">
+                <h4>
+                    Express
+                </h4>
+                <div id="skills-box">
+                    <img class="skills-img2" src="img/expressjs.svg">  
+                </div>
+                <div id="expressprogressbar">
+                  <div></div>
+                </div>
+            </div>
+            <div class="box">
+                <h4>
+                    ReactJS
+                </h4>
+                <i class="react fab fa-react"></i>
+                <div id="reactprogressbar">
+                  <div></div>
+                </div>
+            </div>
+            <div class="box">
+                <h4>
+                    NodeJS
+                </h4>
+                <i class="fab fa-node"></i>
+                <div id="nodeprogressbar">
+                  <div></div>
+                </div>
+            </div>
+    </section>
+      <!-- <section id="skills">
+        <div class="container">
+          <h2>Future</h2>
+          <img
+            src="https://source.unsplash.com/1600x900/?future"
+            alt="future"
+          />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Exercitationem delectus consequatur, unde laborum doloremque, et
+            commodi eveniet aperiam molestiae, ea ducimus officiis! Earum
+            ratione accusantium eos explicabo, nulla harum architecto iste
+            delectus dignissimos atque impedit cum ab error reiciendis. Hic id
+            at repellendus, sunt deserunt officiis sed, mollitia iure quis
+            laborum quasi similique perferendis quisquam iusto. Inventore fugiat
+            voluptatum magnam ducimus magni commodi accusamus consequuntur
+            dignissimos, debitis culpa eum non reiciendis a, cum nisi recusandae
+            nemo! Dolorum, laboriosam! Ut cupiditate non, sequi hic, consectetur
+            expedita animi pariatur eaque ex dignissimos quasi nemo
+            exercitationem quam sunt error. Quas in eveniet dolores.
+          </p>
+        </div>
+    </section> -->
+    </main>
+    <footer id="footer">
+        <h2>Contact me</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Your email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message to me</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <button type="submit">Send message</button>
+        </form>
+        <p>Copyright &copy; Matt Simpson 3030</p>
+    </footer>
+  </body>
+</html>
