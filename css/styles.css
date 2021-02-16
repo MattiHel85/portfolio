@@ -211,24 +211,24 @@ main #experience .content {
 
 /* Skills flex */
 
-#skills .top {
+#skills {
     background-color: rgba(255, 255, 255, 0.95);
-    flex: 3;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 }
 
-#skills .bottom {
-  background-color: rgba(255, 255, 255, 0.95);
-    flex: 3;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 20px;
+#skills #skills-container {
+    width: 80%;
+    margin-left: 10%;
 }
 
-#skills .box {
+#skills .container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+#skills .skill-box {
     background-color: rgb(230, 230, 230);
     border-radius: 5px;
     text-align: center;
@@ -238,17 +238,17 @@ main #experience .content {
     margin: 1rem;
 }
 
-#skills .box i {
+#skills .skill-box i {
   font-size: 4rem;
   margin-top: 1rem;
 }
 
-#skills .box h4 {
+#skills .skill-box h4 {
   color: #333;
   margin-top: 1rem;
 }
 
-#skills .box i {
+#skills .skill-box i {
   color: #333;
 }
 
@@ -283,6 +283,8 @@ main #experience .content {
   }
 
 /* skills - progress bars  */
+
+
 
     /* HTML  */
 
@@ -469,6 +471,11 @@ footer p {
 
 /* form  */
 
+footer form {
+    width: 60%;
+    margin-left: 20%;
+}
+
 footer form .form-group {
     margin: 2rem 0;
 }
@@ -510,6 +517,26 @@ footer form button {
     main #present  img {
         width: 100%;
     }
+
+    main #work .work_boxes {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+    }
+
+    main #work .work_boxes .box {
+        margin: 1rem;
+    }
+
+    #skills {
+        width: 80%;
+        display: flex;
+        flex: wrap;
+    }
+
+    #skills #box {
+        max-width: 25%;
+    }
     footer form {
         width: 80%;
         text-align: left;
@@ -529,5 +556,54 @@ footer form button {
 }
 
 @media (max-width: 576px) {
-    
+    main #hero-banner h1 {
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+        font-family: "Ubunti Mono", monospace;
+    }
+
+    main #work .work_boxes {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+    }
+
+    main #experience img {
+        display: none;
+    }
+
+    main #present {
+        display: block;
+    }
+
+    main #present  img {
+        width: 100%;
+    }
+
+    #skills #skills-container {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #skills .container {
+        flex-direction: column;
+    }
+    footer form {
+        width: 80%;
+        margin-left: 10%;
+        text-align: left;
+    }
+
+    footer form .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+    footer form .form-group input,
+    footer form .form-group textarea {
+        width: 100%;
+    }
+    footer form button {
+        width: 100%;
+    }
 }
