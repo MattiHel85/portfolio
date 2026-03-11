@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
   try {
     await resend.emails.send({
       from: "Portfolio Contact <onboarding@resend.dev>",
-      to: "your-email@example.com", // TODO: replace with your actual email
+      to: "matt.rc.simpson@gmail.com", 
       subject: `Portfolio message from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
     });
