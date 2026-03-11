@@ -18,10 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${GeistSans.variable} ${GeistMono.variable} antialiased bg-[#0a0a0a] text-zinc-100 min-h-screen`}
+        className={`${GeistSans.variable} ${GeistMono.variable} antialiased bg-[#0a0a0a] text-zinc-100 min-h-screen flex flex-col`}
       >
         <Navbar />
-        {children}
+        <div className="flex-1">{children}</div>
         <Footer />
       </body>
     </html>
