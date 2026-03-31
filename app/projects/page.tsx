@@ -2,26 +2,19 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projects = [
   {
-    title: "Lorem Ipsum Project",
+    title: "Realtime Device Monitor",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.",
-    tech: ["Lorem", "Ipsum", "Dolor"],
-    github: "https://github.com",
+      "Backend service for real-time device monitoring. Provides REST endpoints for managing monitored devices and WebSocket events for live status updates, with scheduled status checks.",
+    tech: ["Node.js", "TypeScript", "Express", "Socket.io", "MongoDB"],
+    github: "https://github.com/MattiHel85/realtime-device-monitor-backend",
     demo: "https://example.com",
   },
   {
-    title: "Dolor Sit Amet",
+    title: "Event Management",
     description:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure.",
-    tech: ["Sit", "Amet", "Consectetur"],
-    github: "https://github.com",
-  },
-  {
-    title: "Consectetur Adipiscing",
-    description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat.",
-    tech: ["Adipiscing", "Elit", "Sed"],
-    github: "https://github.com",
+      "A modern event planning dashboard. Create events, set capacity, and manage per-event budgets with multi-currency support, KPI cards, budget line items, and a spend breakdown chart.",
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "Express", "Prisma"],
+    github: "https://github.com/MattiHel85/event-management",
     demo: "https://example.com",
   },
 ];
