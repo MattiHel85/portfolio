@@ -1,5 +1,32 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Admin Auth (Phase 1)
+
+Google-only admin sign-in is enabled. There is no sign-up flow.
+
+1. Create a `.env.local` file in the project root.
+2. Add the following variables:
+
+```bash
+AUTH_SECRET=your-long-random-secret
+AUTH_GOOGLE_ID=your-google-oauth-client-id
+AUTH_GOOGLE_SECRET=your-google-oauth-client-secret
+ADMIN_EMAIL=your-google-email@example.com
+```
+
+3. In Google Cloud OAuth settings, add this redirect URI:
+
+```text
+http://localhost:3000/api/auth/callback/google
+```
+
+4. Run the app and open `/admin`.
+
+Notes:
+- Only the account matching `ADMIN_EMAIL` can access admin routes.
+- Unauthorized Google accounts are denied.
+- Unauthenticated access to `/admin` is redirected to `/signin`.
+
 ## Getting Started
 
 First, run the development server:
